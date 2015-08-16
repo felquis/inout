@@ -2,13 +2,13 @@
 * Return an new Input ready to run modules.
 * @param {[type]} data to be changed
 */
-function Input(data) {
+function In(data) {
 
-	function Output(func) {
-		return new Input( (func || letItGo)(data) );
+	function Out(func) {
+		return new In( (func || letItGo)(data) );
 	}
 
-	return Output;
+	return Out;
 }
 
 function letItGo(data) {
@@ -18,14 +18,14 @@ function letItGo(data) {
 }
 
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-	module.exports = Input;
+	module.exports = In;
 } else {
 	if (typeof define === 'function' && define.amd) {
 		define([], function() {
-			return Input;
+			return In;
 		});
 	}
 	else {
-		window.Input = Input;
+		window.In = In;
 	}
 }
