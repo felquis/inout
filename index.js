@@ -1,5 +1,5 @@
 /**
-* Return an new Input ready to run modules.
+* Return a new Input ready to run modules.
 * @param {[type]} data to be changed
 */
 function In(data) {
