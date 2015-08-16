@@ -13,5 +13,5 @@ In(process.argv)
       console.log(stdout);
     });
 
-  return data;
-});
+    return data;
+  });
