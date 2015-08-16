@@ -3,22 +3,22 @@
 * @param {[type]} data to be changed
 */
 function In(data) {
-    function Out(Transform) {
-        return Transform? In((Transform)(data)) : In(data)
-    }
+  function Out(Transform) {
+    return Transform? In((Transform)(data)) : In(data)
+  }
 
-    return Out
+  return Out
 }
 
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-    module.exports = In
+  module.exports = In
 } else {
-    if (typeof define === 'function' && define.amd) {
-        define([], function() {
-            return In
-        });
-    }
-    else {
-        window.In = In
-    }
+  if (typeof define === 'function' && define.amd) {
+    define([], function() {
+      return In
+    });
+  }
+  else {
+    window.In = In
+  }
 }
