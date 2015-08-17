@@ -4,7 +4,7 @@
 */
 function In(data) {
   function Out(Transform) {
-    return Transform? In((Transform)(data)) : data
+    return Transform ? In( (Transform)(data) ) : data
   }
 
   return Out
