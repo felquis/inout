@@ -1,7 +1,7 @@
 {
   "name": "inout",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "In Out is a 6 lines JS micro-library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
