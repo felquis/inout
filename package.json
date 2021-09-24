@@ -1,8 +1,9 @@
 {
   "name": "inout",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "In Out is a 6 lines JS micro-library",
   "main": "index.js",
+  "homepage": "https://github.com/felquis/inout",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
